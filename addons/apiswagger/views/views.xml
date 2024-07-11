@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="apiswagger.list">
+      <field name="name">apiswagger list</field>
+      <field name="model">apiswagger.apiswagger</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="apiswagger.action_window">
+      <field name="name">apiswagger window</field>
+      <field name="res_model">apiswagger.apiswagger</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="apiswagger.action_server">
+      <field name="name">apiswagger server</field>
+      <field name="model_id" ref="model_apiswagger_apiswagger"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="apiswagger" id="apiswagger.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="apiswagger.menu_1" parent="apiswagger.menu_root"/>
+    <menuitem name="Menu 2" id="apiswagger.menu_2" parent="apiswagger.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="apiswagger.menu_1_list" parent="apiswagger.menu_1"
+              action="apiswagger.action_window"/>
+    <menuitem name="Server to list" id="apiswagger" parent="apiswagger.menu_2"
+              action="apiswagger.action_server"/>
+-->
+  </data>
+</odoo>
