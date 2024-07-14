@@ -1,8 +1,6 @@
-from marshmallow import fields, Schema
 
 from odoo.addons.base_rest import restapi
 from odoo.addons.component.core import Component
-from odoo.addons.datamodel.core import Datamodel
 
 class ProductNewApiService(Component):
     _inherit = "base.rest.service"
