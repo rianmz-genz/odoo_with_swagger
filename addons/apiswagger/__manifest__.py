@@ -20,7 +20,7 @@
     'version': '0.1',
 
     # any module necessary for this one to work correctly
-    'depends': ['base', 'base_rest_datamodel', 'base_rest_auth_api_key', 'point_of_sale'],
+    'depends': ['base', 'base_rest_datamodel', 'base_rest_auth_api_key', 'sale_management'],
 
     # always loaded
     'data': [
