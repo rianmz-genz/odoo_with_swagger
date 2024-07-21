@@ -1,0 +1,15 @@
+<odoo>
+    <data>
+        <!-- Define the client action -->
+        <record id="action_my_owl_component" model="ir.actions.client">
+            <field name="name">My OWL Component</field>
+            <field name="tag">apiswagger.MyOwlComponent</field>
+        </record>
+
+        <!-- Add the menu item -->
+        <menuitem id="menu_my_owl_component"
+                  name="My OWL Component"
+                  action="action_my_owl_component"
+                 />
+    </data>
+</odoo>
